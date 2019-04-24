@@ -13,8 +13,12 @@ class App extends Component {
 
   countClicks = (id) => {
     console.log("clickedPic: " + id);
+    var clickedElement = (this.state.pics.find((elem, ind) => {
 
-    //this.setState({pics[0].clicked: 1});
+      return (elem.id === id)
+      
+    }))
+      console.log("we found the element in the array " + clickedElement.id + " " + clickedElement.click );
   }
 
  /*  removeCard = id => {
