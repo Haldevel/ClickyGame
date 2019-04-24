@@ -13,12 +13,32 @@ class App extends Component {
 
   countClicks = (id) => {
     console.log("clickedPic: " + id);
-    var clickedElement = (this.state.pics.find((elem, ind) => {
-
+    var clickedElementIndex = (this.state.pics.findIndex((elem, ind) => {
+      /* if(elem.id === id) {
+        console.log("we found the element in the array" + );
+      } */
       return (elem.id === id)
       
     }))
-      console.log("we found the element in the array " + clickedElement.id + " " + clickedElement.click );
+    if(pics[clickedElementIndex].click === 0){
+      pics[clickedElementIndex].click++;
+      this.setState({score : this.state.score + 1}, function() { console.log("score now for " + clickedElementIndex + " = " + this.state.score);});
+      this.state.pics.sort(() => Math.random() - 0.5);
+      } 
+      else{
+        console.log("The picture was clicked already");
+        this.setState({score : this.state.score-1}, function() { console.log("score now for " + clickedElementIndex + " = " + this.state.score);});
+        this.state.pics.sort(() => Math.random() - 0.5);
+
+      }
+    
+      //console.log("we found the element in the array " + clickedElement.id + " " + clickedElement.click + " " + ind);
+      console.log("we found the index in the element " + clickedElementIndex);
+      /* if([i].count === 0){
+        cards[i].count = cards[i].count + 1;
+        this.setState({score : this.state.score + 1}, function(){
+          console.log(this.state.score);
+        }); */
   }
 
  /*  removeCard = id => {
