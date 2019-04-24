@@ -1,51 +1,63 @@
 [
     {
         "id": 1,
-        "image": "http://www.pixartalk.com/wp-content/uploads/2014/08/insideoutjoy.jpg"
+        "image": "http://www.pixartalk.com/wp-content/uploads/2014/08/insideoutjoy.jpg",
+        "click": 0
     },
     {
         "id": 2,
-        "image": "http://www.pixartalk.com/wp-content/uploads/2014/08/insideoutsadness.jpg"
+        "image": "http://www.pixartalk.com/wp-content/uploads/2014/08/insideoutsadness.jpg",
+        "click": 0
     },
     {
         "id": 3,
-        "image": "http://www.pixartalk.com/wp-content/uploads/2014/08/insideoutdisgust.jpg"
+        "image": "http://www.pixartalk.com/wp-content/uploads/2014/08/insideoutdisgust.jpg",
+        "click": 0
     },
     {
         "id": 4,
-        "image": "http://www.pixartalk.com/wp-content/uploads/2014/08/insideoutfear.jpg"
+        "image": "http://www.pixartalk.com/wp-content/uploads/2014/08/insideoutfear.jpg",
+        "click": 0
     },
     {
         "id": 5,
-        "image": "http://www.pixartalk.com/wp-content/uploads/2014/08/insideoutanger.jpg"
+        "image": "http://www.pixartalk.com/wp-content/uploads/2014/08/insideoutanger.jpg",
+        "click": 0
     },
     {
         "id": 6,
-        "image": "https://media.comicbook.com/2018/06/9-1115729.jpeg"
+        "image": "https://media.comicbook.com/2018/06/9-1115729.jpeg",
+        "click": 0
     },
     {
         "id": 7,
-        "image": "https://media.comicbook.com/2018/06/8-1115730.jpeg"
+        "image": "https://media.comicbook.com/2018/06/8-1115730.jpeg",
+        "click": 0
     },
     {
         "id": 8,
-        "image": "https://media.comicbook.com/2018/06/6-1115733.jpeg"
+        "image": "https://media.comicbook.com/2018/06/6-1115733.jpeg",
+        "click": 0
     },
     {
         "id": 9,
-        "image": "https://media.comicbook.com/2018/06/5-1115734.jpeg"
+        "image": "https://media.comicbook.com/2018/06/5-1115734.jpeg",
+        "click": 0
     },
     {
         "id": 10,
-        "image": "https://media.comicbook.com/2018/06/2-1115737.jpeg"
+        "image": "https://media.comicbook.com/2018/06/2-1115737.jpeg",
+        "click": 0
     },
     {
         "id": 11,
-        "image": "https://media.comicbook.com/2018/06/1-1115738.jpeg"
+        "image": "https://media.comicbook.com/2018/06/1-1115738.jpeg",
+        "click": 0
     },
     {
         "id": 12,
-        "image": "https://media.comicbook.com/2018/06/4-1115735.jpeg"
+        "image": "https://media.comicbook.com/2018/06/4-1115735.jpeg",
+        "click": 0
     }
 
 ]
