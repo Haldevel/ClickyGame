@@ -8,7 +8,8 @@ class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
     pics,
-    score: 0
+    score: 0,
+    topscore: 0
   };
 
   countClicks = (id) => {
@@ -22,33 +23,21 @@ class App extends Component {
     }))
     if(pics[clickedElementIndex].click === 0){
       pics[clickedElementIndex].click++;
-      this.setState({score : this.state.score + 1}, function() { console.log("score now for " + clickedElementIndex + " = " + this.state.score);});
+      this.setState({score : this.state.score + 1}, function() { console.log("score now for " + clickedElementIndex + " = " + this.state.score)});
+      this.setState({topscore : this.state.topscore + 1});
       this.state.pics.sort(() => Math.random() - 0.5);
       } 
       else{
         console.log("The picture was clicked already");
         this.setState({score : this.state.score-1}, function() { console.log("score now for " + clickedElementIndex + " = " + this.state.score);});
         this.state.pics.sort(() => Math.random() - 0.5);
+        //we will need to reset 
 
       }
-    
-      //console.log("we found the element in the array " + clickedElement.id + " " + clickedElement.click + " " + ind);
-      console.log("we found the index in the element " + clickedElementIndex);
-      /* if([i].count === 0){
-        cards[i].count = cards[i].count + 1;
-        this.setState({score : this.state.score + 1}, function(){
-          console.log(this.state.score);
-        }); */
   }
 
- /*  removeCard = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const pics = this.state.pics.filter(pic => pic.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ pics });
-  }; */
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+  // Map over this.state.pics and render a memoryCard component for each object
   render() {
     return (
       <Wrapper>
