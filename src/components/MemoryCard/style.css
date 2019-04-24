@@ -5,4 +5,14 @@
     text-decoration: underline;
     color: #2A77AE;
   }
+
+  .card {
+    background: #333;
+    border-radius: 2px;
+ /*    height: 150px; */
+    margin: 1rem;
+    position: relative;
+ /*    width: 325px; */
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  }
   
