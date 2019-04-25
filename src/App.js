@@ -10,7 +10,8 @@ class App extends Component {
   state = {
     pics,
     score: 0,
-    topscore: 0
+    topscore: 0,
+    result: "Click an image to begin the game!"
   };
 
   countClicks = (id) => {
@@ -42,7 +43,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Nav score={this.state.score}  topscore={this.state.topscore}/>
+        <Nav score={this.state.score}  topscore={this.state.topscore} result={this.state.result}/>
         <Wrapper>
           <Title name="Clicky Game!" details="Click on an image to earn points, but don't click on any more than once!" />
           {this.state.pics.map(pic => (
