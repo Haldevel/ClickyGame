@@ -2,6 +2,7 @@
 import React from "react";
 import "./style.css";
 
+//Title component receives two variables via the props system
 function Title(props) {
     return (
         <div className="title text-center">

@@ -6,7 +6,7 @@ import pics from "./pics.json";
 import Nav from "./components/Nav";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+  // Setting this.state.pics via pics.json array
   state = {
     pics,
     score: 0,
