@@ -26,18 +26,20 @@ class App extends Component {
     //so we set the click property to 1
     if (pics[clickedElementIndex].click === 0) {
       pics[clickedElementIndex].click++;
-      //increase the score property
+      //increase the score property and the top score property and update the text prompt for a user
       this.setState({ score: this.state.score + 1 });
       this.setState({ topscore: this.state.topscore + 1 });
       this.setState({ result: "You guessed correctly!" });
+      //shuffle the array
       this.state.pics.sort(() => Math.random() - 0.5);
     }
     else {
       console.log("The picture was clicked already");
-      this.setState({ score: 0}, function () { console.log("score now for " + clickedElementIndex + " = " + this.state.score); });
+      //since the same card was clicked set score to 0 and update the text prompt accordingly
+      this.setState({ score: 0});
       this.setState({ result: "You guessed incorrectly!"});
+      //shuffle the array
       this.state.pics.sort(() => Math.random() - 0.5);
-      //we will need to reset 
 
     }
   }
