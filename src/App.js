@@ -36,20 +36,20 @@ class App extends Component {
     else {
       console.log("The picture was clicked already");
       //since the same card was clicked set score to 0 and update the text prompt accordingly
-      this.setState({ score: 0});
-      this.setState({ result: "You guessed incorrectly!"});
+      this.setState({ score: 0 });
+      this.setState({ result: "You guessed incorrectly!" });
       //shuffle the array
       this.state.pics.sort(() => Math.random() - 0.5);
-
     }
   }
 
 
-  // Map over this.state.pics and render a memoryCard component for each object
+  // Pass the state to the Nav component using props system
+  //then map over this.state.pics and render a memoryCard component for each object
   render() {
     return (
       <div>
-        <Nav score={this.state.score}  topscore={this.state.topscore} result={this.state.result}/>
+        <Nav score={this.state.score} topscore={this.state.topscore} result={this.state.result} />
         <Wrapper>
           <Title name="Clicky Game!" details="Click on an image to earn points, but don't click on any more than once!" />
           {this.state.pics.map(pic => (
@@ -60,7 +60,7 @@ class App extends Component {
               countClicks={this.countClicks}
             />
           ))}
-    </Wrapper>
+        </Wrapper>
       </div>
     )
   }
