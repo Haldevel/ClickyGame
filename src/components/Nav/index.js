@@ -6,7 +6,7 @@ function Nav(props) {
     <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: "#0e8ff8"}}>
       <a className="navbar-brand" href="/" style={{fontSize: '1.8rem'}}>{props.result}
       </a>
-      <div className="navbar-brand ml-auto" style={{fontSize: '1.8rem'}}>Score: {props.score} | Top Socore: {props.topscore}</div>
+      <div className="navbar-brand ml-auto" style={{fontSize: '1.8rem'}}>Score: {props.score} | Top Score: {props.topscore}</div>
     </nav>
   );
 }
