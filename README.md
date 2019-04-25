@@ -12,7 +12,7 @@ _________________________________________________________________
 The page and its controls are split into separate UI React components. The App.js is a class component which state is controlled, and the Memory Card, the Wrapper, the Navbar, and the Title are functional componets exchanging the data via the props system.
 
 
-![Home Page](./images/home-page.jpg)
+![Screenshot](./public/ClickyGameScreen.png)
 
 _________________________________________________________________
 
