@@ -31,7 +31,7 @@ class App extends Component {
     }
     else {
       console.log("The picture was clicked already");
-      this.setState({ score: this.state.score - 1 }, function () { console.log("score now for " + clickedElementIndex + " = " + this.state.score); });
+      this.setState({ score: 0}, function () { console.log("score now for " + clickedElementIndex + " = " + this.state.score); });
       this.state.pics.sort(() => Math.random() - 0.5);
       //we will need to reset 
 
