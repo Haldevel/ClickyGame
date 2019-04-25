@@ -6,7 +6,8 @@ import pics from "./pics.json";
 import Nav from "./components/Nav";
 
 class App extends Component {
-  // Setting this.state.pics via pics.json array
+  // Setting this.state using pics.json array and setting the default values for the variables
+  // containing current score, top score and the instructions for a user
   state = {
     pics,
     score: 0,
@@ -27,11 +28,13 @@ class App extends Component {
       pics[clickedElementIndex].click++;
       this.setState({ score: this.state.score + 1 }, function () { console.log("score now for " + clickedElementIndex + " = " + this.state.score) });
       this.setState({ topscore: this.state.topscore + 1 });
+      this.setState({ result: "You guessed correctly!" });
       this.state.pics.sort(() => Math.random() - 0.5);
     }
     else {
       console.log("The picture was clicked already");
       this.setState({ score: 0}, function () { console.log("score now for " + clickedElementIndex + " = " + this.state.score); });
+      this.setState({ result: "You guessed incorrectly!"});
       this.state.pics.sort(() => Math.random() - 0.5);
       //we will need to reset 
 
