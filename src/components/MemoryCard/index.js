@@ -5,8 +5,8 @@ import "./style.css";
 function MemoryCard(props) {
   return (
     <div className="card mb-4" onClick={() => props.countClicks(props.id)}>
-      <div className="img-container" width='300px' >
-        <img alt='Pixar Characters' src={props.image} width='300px'/>
+      <div className="img-container" style={{width: '300px'}} >
+        <img alt='Pixar Characters' src={props.image} style={{width: '300px', height: '205px'}}/>
       </div>
     </div>
   );
