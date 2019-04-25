@@ -1,5 +1,6 @@
 import React from "react";
 
+//the code to create Nav bar component and pass three variables using props
 function Nav(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark" style={{backgroundColor: "#0e8ff8"}}>
