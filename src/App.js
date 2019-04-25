@@ -15,18 +15,19 @@ class App extends Component {
     result: "Click an image to begin the game!"
   };
 
+  //finding out what is the index of the element of the pics array which card was clicked (var clickedElementIndex)
   countClicks = (id) => {
     console.log("clickedPic: " + id);
     var clickedElementIndex = (this.state.pics.findIndex((elem, ind) => {
-      /* if(elem.id === id) {
-        console.log("we found the element in the array" + );
-      } */
       return (elem.id === id)
+    }));
 
-    }))
+    //if the click property of the object representing the card is 0, it was not clicked yet
+    //so we set the click property to 1
     if (pics[clickedElementIndex].click === 0) {
       pics[clickedElementIndex].click++;
-      this.setState({ score: this.state.score + 1 }, function () { console.log("score now for " + clickedElementIndex + " = " + this.state.score) });
+      //increase the score property
+      this.setState({ score: this.state.score + 1 });
       this.setState({ topscore: this.state.topscore + 1 });
       this.setState({ result: "You guessed correctly!" });
       this.state.pics.sort(() => Math.random() - 0.5);
